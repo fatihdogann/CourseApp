@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.http import JsonResponse
 from .models import Course, Category, Tag
 from .forms import CourseForm
 
@@ -162,3 +163,23 @@ def teacher_dashboard(request):
     }
     
     return render(request, 'courses/teacher_dashboard.html', context)
+
+# Category creation view
+@login_required
+def create_category(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        if name:
+            # Check if category already exists
+            category, created = Category.objects.get_or_create(
+                name=name,
+                defaults={'slug': name.lower().replace(' ', '-')}
+            )
+            if created:
+                messages.success(request, f'"{name}" kategorisi başarıyla oluşturuldu!')
+            else:
+                messages.info(request, f'"{name}" kategorisi zaten mevcut.')
+            return JsonResponse({'status': 'success', 'id': category.id, 'name': category.name})
+        else:
+            return JsonResponse({'status': 'error', 'message': 'Kategori adı boş olamaz.'})
+    return JsonResponse({'status': 'error', 'message': 'Geçersiz istek.'})
