@@ -153,4 +153,4 @@ Thumbs.db
 *.sln
 *.vs
 *.vcxproj
-*.vcxproj.filters
+*.vcxproj.filters"venv/"  
