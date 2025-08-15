@@ -55,6 +55,15 @@ Course App is a Django-based online learning platform that allows users to brows
 
 7. Visit `http://127.0.0.1:8000` in your browser
 
+## Default Admin User
+
+A default admin user has been created for testing purposes:
+- Username: `admin`
+- Email: `admin@example.com`
+- Password: `admin123`
+
+You can access the admin panel at `http://127.0.0.1:8000/admin/`
+
 ## Project Structure
 
 ```
