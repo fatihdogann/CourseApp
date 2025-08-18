@@ -7,7 +7,7 @@
 
 Course App is a Django-based online learning platform that allows users to browse, create, and manage courses. The platform features user authentication, course categorization, and a responsive design.
 
-## 🌟 Features
+##  Features
 
 - **User Authentication**: Secure registration and login system
 - **Course Management**: Create, update, and delete courses
@@ -17,7 +17,7 @@ Course App is a Django-based online learning platform that allows users to brows
 - **Course Search**: Easily find courses by category or tags
 - **Teacher Dashboard**: Instructors can manage their own courses
 
-## 🛠️ Technologies Used
+## ️ Technologies Used
 
 - **Backend**: Python 3.13+, Django 5.1+
 - **Frontend**: HTML5, CSS3, Bootstrap 5, JavaScript
@@ -25,7 +25,7 @@ Course App is a Django-based online learning platform that allows users to brows
 - **Authentication**: Django's built-in authentication system
 - **Static Files**: CSS, JavaScript, and image handling with Django's static files system
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 courseapp/
@@ -69,11 +69,11 @@ courseapp/
 └── README.md          # Project documentation
 ```
 
-## 🚀 Installation
+##  Installation
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/courseapp.git
+   git clone https://github.com/fatihdogann/CourseApp.git
    cd courseapp
    ```
 
@@ -106,24 +106,35 @@ courseapp/
 7. **Visit the application**:
    Open your browser and go to `http://127.0.0.1:8000`
 
-## 👤 Default Admin User
+##  Default Admin User
 
 A default admin user has been created for testing purposes:
-- **Username**: `admin`
-- **Email**: `admin@example.com`
-- **Password**: `admin123`
+
+* **Username**: `admin`
+* **Email**: `admin@example.com`
+* **Password**: `admin123`
 
 You can access the admin panel at `http://127.0.0.1:8000/admin/`
 
-## 🎨 Design Features
+##  Design Features
 
-- **Modern Color Scheme**: Red and blue gradient with green accents
-- **Responsive Layout**: Works on mobile, tablet, and desktop
-- **Interactive Elements**: Hover effects and smooth transitions
-- **Social Media Integration**: Footer with social media links
-- **Clean Typography**: Poppins font for a modern look
+* **Modern Color Scheme**: Red and blue gradient with green accents
+* **Responsive Layout**: Works on mobile, tablet, and desktop
+* **Interactive Elements**: Hover effects and smooth transitions
+* **Social Media Integration**: Footer with social media links
+* **Clean Typography**: Poppins font for a modern look
 
-## 🤝 Contributing
+##  Ekran Görüntüleri
+
+### Ana Sayfa
+
+![Ana Sayfa](courseapp/Ekran%20Görüntüleri/CourseApp-1.png)
+
+### Kurs Sayfası
+
+![Kurs Sayfası](courseapp/Ekran%20Görüntüleri/CourseApp-2.png)
+
+##  Contributing
 
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature/your-feature`)
@@ -132,18 +143,19 @@ You can access the admin panel at `http://127.0.0.1:8000/admin/`
 5. Push to the branch (`git push origin feature/your-feature`)
 6. Create a new Pull Request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
+##  Contact
 
 For support or questions, please contact:
-- Email: info@courseapp.com
-- Phone: 0552 576 38 94
 
-## 🙏 Acknowledgements
+* Email: [info@courseapp.com](mailto:info@courseapp.com)
+* Phone: 0552 576 38 94
 
-- [Django](https://www.djangoproject.com/)
-- [Bootstrap](https://getbootstrap.com/)
-- [Font Awesome](https://fontawesome.com/)
+##  Acknowledgements
+
+* [Django](https://www.djangoproject.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Font Awesome](https://fontawesome.com/)
