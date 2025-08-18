@@ -5,7 +5,6 @@ from .models import Slider
 def index(request):
     courses = Course.objects.filter(available=True).order_by('-date')[:2] if Course.objects.exists() else []
     
-    # Sliders tablosu henüz yoksa boş liste kullan
     try:
         sliders = Slider.objects.filter(is_active=True)
     except:
