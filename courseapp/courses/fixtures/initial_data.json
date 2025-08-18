@@ -1,0 +1,426 @@
+[
+    {
+      "model": "courses.category",
+      "pk": 1,
+      "fields": {
+        "name": "Programlama",
+        "slug": "programlama"
+      }
+    },
+    {
+      "model": "courses.category",
+      "pk": 2,
+      "fields": {
+        "name": "Tasarım",
+        "slug": "tasarim"
+      }
+    },
+    {
+      "model": "courses.category",
+      "pk": 3,
+      "fields": {
+        "name": "İş ve Yönetim",
+        "slug": "is-ve-yonetim"
+      }
+    },
+    {
+      "model": "courses.category",
+      "pk": 4,
+      "fields": {
+        "name": "Kişisel Gelişim",
+        "slug": "kisisel-gelisim"
+      }
+    },
+    {
+      "model": "courses.course",
+      "pk": 1,
+      "fields": {
+        "teacher": 1,
+        "category": 1,
+        "name": "Python ile Web Geliştirme",
+        "slug": "python-ile-web-gelistirme",
+        "description": "<p>Bu kursta Python programlama dilini ve Django web framework'ünü kullanarak web uygulamaları geliştirmeyi öğreneceksiniz. Sıfırdan başlayarak, veritabanı tasarımı, kullanıcı kimlik doğrulama ve API geliştirme konularında pratik yapacaksınız.</p>\n\n<h3>Öğrenecekleriniz:</h3>\n<ul>\n<li>Python temel programlama</li>\n<li>Django web framework</li>\n<li>Veritabanı tasarımı ve ORM</li>\n<li>REST API geliştirme</li>\n<li>Frontend entegrasyonu</li>\n</ul>",
+        "image": "courses/2023/05/06/python-django.jpg",
+        "date": "2023-05-06T10:00:00Z",
+        "available": true
+      }
+    },
+    {
+      "model": "courses.course",
+      "pk": 2,
+      "fields": {
+        "teacher": 1,
+        "category": 1,
+        "name": "JavaScript Temelleri",
+        "slug": "javascript-temelleri",
+        "description": "<p>JavaScript'in temel kavramlarını, değişkenler, veri tipleri, operatörler, koşul ifadeleri, döngüler, fonksiyonlar ve nesneler gibi konuları detaylı bir şekilde öğreneceksiniz. Modern JavaScript özellikleri ve en iyi uygulamalar da ele alınacaktır.</p>\n\n<h3>Öğrenecekleriniz:</h3>\n<ul>\n<li>JavaScript temelleri</li>\n<li>ES6+ özellikleri</li>\n<li>DOM manipülasyonu</li>\n<li>Asenkron JavaScript</li>\n<li>Web API'leri</li>\n</ul>",
+        "image": "courses/2023/05/06/javascript.jpg",
+        "date": "2023-05-06T11:00:00Z",
+        "available": true
+      }
+    },
+    {
+      "model": "courses.course",
+      "pk": 3,
+      "fields": {
+        "teacher": 1,
+        "category": 2,
+        "name": "UI/UX Tasarım Prensipleri",
+        "slug": "ui-ux-tasarim-prensipleri",
+        "description": "<p>Kullanıcı arayüzü ve kullanıcı deneyimi tasarımının temel prensiplerini öğrenin. Renk teorisi, tipografi, düzen, kullanılabilirlik, kullanıcı araştırması ve prototipleme gibi konuları kapsamlı bir şekilde ele alacağız.</p>\n\n<h3>Öğrenecekleriniz:</h3>\n<ul>\n<li>UI tasarım prensipleri</li>\n<li>UX araştırma metodları</li>\n<li>Wireframing ve prototipleme</li>\n<li>Kullanıcı testleri</li>\n<li>Renk ve tipografi</li>\n</ul>",
+        "image": "courses/2023/05/06/ui-ux.jpg",
+        "date": "2023-05-06T12:00:00Z",
+        "available": true
+      }
+    },
+    {
+      "model": "courses.course",
+      "pk": 4,
+      "fields": {
+        "teacher": 1,
+        "category": 2,
+        "name": "Photoshop ile Web Tasarımı",
+        "slug": "photoshop-ile-web-tasarimi",
+        "description": "<p>Adobe Photoshop kullanarak profesyonel web arayüzleri tasarlamayı öğrenin. Temel araçlardan başlayarak ileri düzey tekniklere kadar Photoshop'un web tasarımcıları için sunduğu tüm özelliklerini keşfedin.</p>\n\n<h3>Öğrenecekleriniz:</h3>\n<ul>\n<li>Photoshop temel araçları</li>\n<li>Web için görüntü optimizasyonu</li>\n<li>UI elementleri tasarlama</li>\n<li>Responsive tasarım</li>\n<li>Mockup oluşturma</li>\n</ul>",
+        "image": "courses/2023/05/06/photoshop-web.jpg",
+        "date": "2023-05-06T13:00:00Z",
+        "available": true
+      }
+    },
+    {
+      "model": "courses.course",
+      "pk": 5,
+      "fields": {
+        "teacher": 1,
+        "category": 3,
+        "name": "Etkili Liderlik",
+        "slug": "etkili-liderlik",
+        "description": "<p>Modern iş dünyasında etkili liderlik becerilerini geliştirin. Takım yönetimi, karar verme, çatışma çözümü ve stratejik düşünme konularında pratik yaklaşımlar ve teknikler öğrenin.</p>\n\n<h3>Öğrenecekleriniz:</h3>\n<ul>\n<li>Liderlik stilleri ve teorileri</li>\n<li>Takım yönetimi</li>\n<li>Çatışma çözümü</li>\n<li>Stratejik planlama</li>\n<li>Motivasyon teknikleri</li>\n</ul>",
+        "image": "courses/2023/05/06/liderlik.jpg",
+        "date": "2023-05-06T14:00:00Z",
+        "available": true
+      }
+    },
+    {
+      "model": "courses.course",
+      "pk": 6,
+      "fields": {
+        "teacher": 1,
+        "category": 3,
+        "name": "Dijital Pazarlama Stratejileri",
+        "slug": "dijital-pazarlama-stratejileri",
+        "description": "<p>Kapsamlı bir dijital pazarlama stratejisi oluşturmak ve uygulamak için gereken bilgi ve becerileri edinin. SEO, sosyal medya, e-posta pazarlaması ve içerik pazarlaması gibi önemli dijital pazarlama kanallarını keşfedin.</p>\n\n<h3>Öğrenecekleriniz:</h3>\n<ul>\n<li>SEO temel prensipleri</li>\n<li>Sosyal medya pazarlaması</li>\n<li>E-posta pazarlama kampanyaları</li>\n<li>İçerik pazarlaması stratejileri</li>\n<li>Analitik ve raporlama</li>\n</ul>",
+        "image": "courses/2023/05/06/dijital-pazarlama.jpg",
+        "date": "2023-05-06T15:00:00Z",
+        "available": true
+      }
+    },
+    {
+      "model": "courses.course",
+      "pk": 7,
+      "fields": {
+        "teacher": 1,
+        "category": 4,
+        "name": "Etkili İletişim Becerileri",
+        "slug": "etkili-iletisim-becerileri",
+        "description": "<p>Kişisel ve profesyonel yaşamınızda etkili iletişim becerilerini geliştirerek ilişkilerinizi güçlendirin. Aktif dinleme, açık iletişim, beden dili ve sunum becerileri gibi konuları kapsamlı bir şekilde ele alacağız.</p>\n\n<h3>Öğrenecekleriniz:</h3>\n<ul>\n<li>Aktif dinleme teknikleri</li>\n<li>Beden dili ve ses tonu kontrolü</li>\n<li>Etkili sunum hazırlama</li>\n<li>Zor kişilerle iletişim</li>\n<li>Çevrimiçi iletişim becerileri</li>\n</ul>",
+        "image": "courses/2023/05/06/iletisim.jpg",
+        "date": "2023-05-06T16:00:00Z",
+        "available": true
+      }
+    },
+    {
+      "model": "courses.course",
+      "pk": 8,
+      "fields": {
+        "teacher": 1,
+        "category": 4,
+        "name": "Zaman Yönetimi",
+        "slug": "zaman-yonetimi",
+        "description": "<p>Zamanınızı daha verimli kullanarak üretkenliğinizi artırın ve stresle başa çıkın. Önceliklendirme, planlama, delegasyon ve odaklanma tekniklerini öğrenerek hem iş hem de özel hayatınızda daha fazla şey başarın.</p>\n\n<h3>Öğrenecekleriniz:</h3>\n<ul>\n<li>Önceliklendirme teknikleri</li>\n<li>Zaman tuzaklarını belirleme</li>\n<li>Pomodoro tekniği</li>\n<li>Görev yönetim sistemleri</li>\n<li>Verimli toplantı yönetimi</li>\n</ul>",
+        "image": "courses/2023/05/06/zaman-yonetimi.jpg",
+        "date": "2023-05-06T17:00:00Z",
+        "available": true
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 1,
+      "fields": {
+        "name": "Python",
+        "slug": "python"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 2,
+      "fields": {
+        "name": "Web Geliştirme",
+        "slug": "web-gelistirme"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 3,
+      "fields": {
+        "name": "Django",
+        "slug": "django"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 4,
+      "fields": {
+        "name": "JavaScript",
+        "slug": "javascript"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 5,
+      "fields": {
+        "name": "Front-end",
+        "slug": "front-end"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 6,
+      "fields": {
+        "name": "UI/UX",
+        "slug": "ui-ux"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 7,
+      "fields": {
+        "name": "Tasarım",
+        "slug": "tasarim"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 8,
+      "fields": {
+        "name": "Photoshop",
+        "slug": "photoshop"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 9,
+      "fields": {
+        "name": "Liderlik",
+        "slug": "liderlik"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 10,
+      "fields": {
+        "name": "İş Yönetimi",
+        "slug": "is-yonetimi"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 11,
+      "fields": {
+        "name": "Pazarlama",
+        "slug": "pazarlama"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 12,
+      "fields": {
+        "name": "SEO",
+        "slug": "seo"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 13,
+      "fields": {
+        "name": "İletişim",
+        "slug": "iletisim"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 14,
+      "fields": {
+        "name": "Kişisel Gelişim",
+        "slug": "kisisel-gelisim"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 15,
+      "fields": {
+        "name": "Zaman Yönetimi",
+        "slug": "zaman-yonetimi"
+      }
+    },
+    {
+      "model": "courses.tag",
+      "pk": 16,
+      "fields": {
+        "name": "Üretkenlik",
+        "slug": "uretkenlik"
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 1,
+      "fields": {
+        "course": 1,
+        "tag": 1
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 2,
+      "fields": {
+        "course": 1,
+        "tag": 2
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 3,
+      "fields": {
+        "course": 1,
+        "tag": 3
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 4,
+      "fields": {
+        "course": 2,
+        "tag": 4
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 5,
+      "fields": {
+        "course": 2,
+        "tag": 2
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 6,
+      "fields": {
+        "course": 2,
+        "tag": 5
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 7,
+      "fields": {
+        "course": 3,
+        "tag": 6
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 8,
+      "fields": {
+        "course": 3,
+        "tag": 7
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 9,
+      "fields": {
+        "course": 4,
+        "tag": 7
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 10,
+      "fields": {
+        "course": 4,
+        "tag": 8
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 11,
+      "fields": {
+        "course": 5,
+        "tag": 9
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 12,
+      "fields": {
+        "course": 5,
+        "tag": 10
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 13,
+      "fields": {
+        "course": 6,
+        "tag": 11
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 14,
+      "fields": {
+        "course": 6,
+        "tag": 12
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 15,
+      "fields": {
+        "course": 7,
+        "tag": 13
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 16,
+      "fields": {
+        "course": 7,
+        "tag": 14
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 17,
+      "fields": {
+        "course": 8,
+        "tag": 15
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 18,
+      "fields": {
+        "course": 8,
+        "tag": 14
+      }
+    },
+    {
+      "model": "courses.coursetag",
+      "pk": 19,
+      "fields": {
+        "course": 8,
+        "tag": 16
+      }
+    }
+  ]

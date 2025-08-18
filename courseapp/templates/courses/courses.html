@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Course App - Kurslar{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row">
+        <!-- Kategoriler Sidebar -->
+        <div class="col-md-3 mb-4">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Kategoriler</h5>
+                </div>
+                <div class="card-body p-0">
+                    <div class="list-group list-group-flush">
+                        <a href="{% url 'courses' %}" class="list-group-item list-group-item-action {% if not category %}active{% endif %}">
+                            Tüm Kategoriler
+                        </a>
+                        {% for c in categories %}
+                        <a href="{% url 'courses_by_category' c.slug %}" class="list-group-item list-group-item-action {% if category.id == c.id %}active{% endif %}">
+                            {{ c.name }}
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Kurslar Listesi -->
+        <div class="col-md-9">
+            <h1 class="mb-4">
+                {% if category %}
+                    {{ category.name }} Kursları
+                {% else %}
+                    Tüm Kurslar
+                {% endif %}
+            </h1>
+            
+            <div class="row">
+                {% for course in courses %}
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 course-card">
+                        <img src="{{ course.image.url }}" class="card-img-top" alt="{{ course.name }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ course.name }}</h5>
+                            <p class="card-text">{{ course.description|truncatechars:100 }}</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="{% url 'course_detail' course.category.slug course.slug %}" class="btn btn-outline-primary">Detayları Gör</a>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-12">
+                    <div class="alert alert-info">
+                        Bu kategoride henüz kurs bulunmamaktadır.
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <!-- Sayfalama -->
+            {% if courses.paginator.num_pages > 1 %}
+            <nav class="mt-4">
+                <ul class="pagination justify-content-center">
+                    {% if courses.has_previous %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ courses.previous_page_number }}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    {% else %}
+                    <li class="page-item disabled">
+                        <span class="page-link">&laquo;</span>
+                    </li>
+                    {% endif %}
+                    
+                    {% for i in courses.paginator.page_range %}
+                    <li class="page-item {% if courses.number == i %}active{% endif %}">
+                        <a class="page-link" href="?page={{ i }}">{{ i }}</a>
+                    </li>
+                    {% endfor %}
+                    
+                    {% if courses.has_next %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ courses.next_page_number }}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                    {% else %}
+                    <li class="page-item disabled">
+                        <span class="page-link">&raquo;</span>
+                    </li>
+                    {% endif %}
+                </ul>
+            </nav>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
