@@ -159,3 +159,14 @@ For support or questions, please contact:
 * [Django](https://www.djangoproject.com/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Font Awesome](https://fontawesome.com/)
+
+---
+
+## Geliştirici
+
+**Mehmet Fatih Doğan** — backend geliştirici, güvenlik meraklısı.
+
+- 🌐 Portfolyo & iletişim: [mehmetfatihdogan.com.tr](https://mehmetfatihdogan.com.tr)
+- 💻 GitHub: [@fatihdogann](https://github.com/fatihdogann)
+
+Proje hakkında soru, hata bildirimi veya geri bildirim için [iletişim sayfamdan](https://mehmetfatihdogan.com.tr/iletisim) ulaşabilirsin.
