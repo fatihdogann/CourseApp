@@ -1,6 +1,6 @@
 # CourseApp
 
-![Django](https://img.shields.io/badge/Django-5.1-green)
+![Django](https://img.shields.io/badge/Django-5.2_LTS-green)
 ![Python](https://img.shields.io/badge/Python-3.13-blue)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?logo=bootstrap&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-red)
@@ -21,7 +21,7 @@ CourseApp, Django ile geliştirilmiş çevrimiçi öğrenme platformudur. Kullan
 
 | Katman | Teknoloji |
 | --- | --- |
-| Backend | Python 3.13, Django 5.1 |
+| Backend | Python 3.13, Django 5.2 LTS |
 | Frontend | HTML5, CSS3, Bootstrap 5, JavaScript |
 | Veritabanı | SQLite (varsayılan) |
 | Görsel işleme | Pillow — kurs kapak görselleri |
@@ -67,6 +67,18 @@ CourseApp, Django ile geliştirilmiş çevrimiçi öğrenme platformudur. Kullan
    ```
 
 Uygulama `http://127.0.0.1:8000` adresinde çalışır; admin paneli `/admin/` yolundadır.
+
+## Doğrulama
+
+```bash
+python manage.py check
+python manage.py makemigrations --check --dry-run
+python manage.py test courses pages accounts
+```
+
+CI, kurulum ve model/migration uyumuna ek olarak kurs filtreleme, detay sayfası,
+giriş gerekliliği ve öğretmenlerin yalnız kendi kurslarını değiştirebilmesini
+kontrol eder. Testler ayrı ve geçici bir veritabanı kullanır.
 
 ## Proje Yapısı
 

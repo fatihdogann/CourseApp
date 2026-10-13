@@ -9,7 +9,7 @@ from .forms import CourseForm
 def course_list(request, category_slug=None):
     category = None
     categories = Category.objects.all()
-    courses = Course.objects.all()
+    courses = Course.objects.order_by('-date', '-pk')
     
     if category_slug:
         category = get_object_or_404(Category, slug=category_slug)
@@ -113,7 +113,7 @@ def delete_course(request, course_slug):
 
 def courses_by_tag(request, tag_slug):
     tag = get_object_or_404(Tag, slug=tag_slug)
-    courses = Course.objects.filter(course_tags__tag=tag)
+    courses = Course.objects.filter(course_tags__tag=tag).order_by('-date', '-pk')
     
     page = request.GET.get('page', 1)
     paginator = Paginator(courses, 6)
